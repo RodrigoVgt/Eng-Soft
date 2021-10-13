@@ -22,7 +22,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 1600px;
 }
 
 
@@ -90,7 +90,7 @@ body {
 .dropdown2 {
   position: relative;
   float:left;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .dropdown-content2 {
@@ -112,12 +112,17 @@ body {
 
 .input-group{
   position: relative;
-  width: 250px;
-  float: left;
-  margin-top: 5px;
-  margin-left: 5px;
+  width: 300px;
+  float:relative;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .input-group-text{
   width: 120px;
+}
+.central{
+    width: 1200px; 
+    margin-left: 400px;
+    margin-right: auto; 
 }
