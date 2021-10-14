@@ -27,11 +27,10 @@
     <link href="cover.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
-    
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
        <div>
-        <h3 class="float-md-start mb-0"><a href="index.html" class="text-white">Menu principal</h3>
+        <h3 class="float-md-start "><a href="index.html" class="text-white">Menu principal</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="finanças.html">Finanças</a>
             <a class="nav-link" href="compras.html">Compras</a>
@@ -40,30 +39,22 @@
        </div>
       </header>
       <main class>
+        <form class= formulario action="compras.php" method="post">
           <div class = "central">
-            <div class="dropdown float-left">
-                <button class="dropbtn">Selecione o Produto</button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+            <div class="finalizar1">
+              <button type="submit" class="btn">Editar</button>
             </div>
-            <div class="dropdown2">
-                <button class="dropbtn2">Selecione o Fornecedor</button>
-                    <div class="dropdown-content2">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+            <div class="finalizar2">
+              <button type="submit" class="btn">Adicionar</button>
             </div>
-            <div class="input-group">
-                    <div class="input-group flex-nowrap">
-                        <span class="input-group-text" id="addon-wrapping">Quantidade:</span>
-                        <input type="number" class="form-control" placeholder=" " aria-label="value" aria-describedby="addon-wrapping">
-                    </div>
+            <div class="finalizar3">
+              <button type="submit" class="btn">Excluir</button>
             </div>
-        </div>
+          </div>
+          <div class="finalizar4">
+            <button type="submit" class="btn">Imprimir</button>
+          </div>
+        </form>
       </main>
      <footer class="mt-auto text-white-50">
         <p>Trabalho para a disciplina de Engenharia de Software, pela Universidade Federal da Fronteira Sul</p>

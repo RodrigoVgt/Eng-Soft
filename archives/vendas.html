@@ -40,31 +40,36 @@
        </div>
       </header>
       <main class>
-        <div class = "central">
-          <div class="dropdown float-left">
-              <button class="dropbtn">Selecione o Produto</button>
-                  <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                  </div>
+        <form class= formulario action="vendas.php" method="post">
+          <div class = "central">
+            <div class="dropdown float-left">
+                <button class="dropbtn">Selecione o Produto</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2">Selecione o Cliente</button>
+                    <div class="dropdown-content2">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+            </div>
+            <div class="input-group">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Quantidade:</span>
+                        <input type="number" class="form-control" id = "quantidade" placeholder=" " aria-label="value" aria-describedby="addon-wrapping" required min = "1">
+                    </div>
+            </div>
           </div>
-          <div class="dropdown2">
-              <button class="dropbtn2">Selecione o Cliente</button>
-                  <div class="dropdown-content2">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                  </div>
-          </div>
-          <div class="input-group">
-                  <div class="input-group flex-nowrap">
-                      <span class="input-group-text" id="addon-wrapping">Quantidade:</span>
-                      <input type="number" class="form-control" placeholder=" " aria-label="value" aria-describedby="addon-wrapping">
-                  </div>
-          </div>
-      </div>
-    </main>
+            <div class="finalizar">
+              <button type="submit" class="btn">Finalizar</button>
+            </div>
+        </form>
+      </main>
      <footer class="mt-auto text-white-50">
         <p>Trabalho para a disciplina de Engenharia de Software, pela Universidade Federal da Fronteira Sul</p>
      </footer>

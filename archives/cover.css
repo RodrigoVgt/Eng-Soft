@@ -59,6 +59,7 @@ body {
   font-size: 16px;
   border: 10px;
   border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown {
@@ -93,6 +94,7 @@ body {
   min-width: 204px;
   border: none;
   border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown2 {
@@ -116,7 +118,9 @@ body {
 }
 
 
-.dropdown2:hover .dropdown-content2 {display: block;}
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
 
 .input-group{
   position: relative;
@@ -133,4 +137,50 @@ body {
     width: 1200px; 
     margin-left: 400px;
     margin-right: auto; 
+}
+
+.finalizar{
+  float: right;
+  margin-right: 300px;
+  margin-top: 50px;
+}
+
+.btn{
+  position: relative;
+  width: 150px;
+  background-color: #04AA6D;
+  color: rgb(255, 255, 255);
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.finalizar1{
+  position: relative;
+  float: left;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.finalizar2{
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  margin-top: auto;
+}
+.finalizar3{
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  margin-top: auto;
+}
+.finalizar4{
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
 }
