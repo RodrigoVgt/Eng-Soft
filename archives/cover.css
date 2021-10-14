@@ -155,32 +155,32 @@ body {
   border-radius: 10px;
 }
 
-.btn:hover{
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-}
-
 .finalizar1{
   position: relative;
   float: left;
   margin-left: auto;
   margin-top: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
 .finalizar2{
   position: relative;
   float: left;
-  margin-left: 30px;
+  margin-left: 50px;
   margin-top: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 .finalizar3{
   position: relative;
   float: left;
-  margin-left: 30px;
+  margin-left: 50px;
   margin-top: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 .finalizar4{
   position: relative;
   float: left;
   margin-left: 100px;
   margin-top: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
