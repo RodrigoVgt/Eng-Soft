@@ -30,7 +30,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
        <div>
-        <h3 class="float-md-start "><a href="index.html" class="text-white">Menu principal</h3>
+        <h3 class="float-md-start "><a href="index.html" class="text-white">Bacca's</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="finanças.html">Finanças</a>
             <a class="nav-link" href="compras.html">Compras</a>
@@ -39,7 +39,6 @@
        </div>
       </header>
       <main class>
-        <form class= formulario action="compras.php" method="post">
           <div class = "central">
             <div class="finalizar1">
               <button type="submit" class="btn">Editar</button>
@@ -52,9 +51,13 @@
             </div>
           </div>
           <div class="finalizar4">
-            <button type="submit" class="btn">Imprimir</button>
+            <button type="submit" onclick="impression()" class="btn">Imprimir</button>
           </div>
-        </form>
+          <script>
+            function impression(){
+            alert("Impressora não conectada!\nImpossível imprimir!!!");
+            }
+          </script>
       </main>
      <footer class="mt-auto text-white-50">
         <p>Trabalho para a disciplina de Engenharia de Software, pela Universidade Federal da Fronteira Sul</p>

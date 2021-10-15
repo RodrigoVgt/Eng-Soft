@@ -8,6 +8,7 @@
 
      <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -26,37 +27,67 @@
     </style>
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
+  <body class="d-flex h-100 text-center text-white bg-dark"> 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
        <div>
-        <h3 class="float-md-start mb-0"><a href="index.html" class="text-white">Menu principal</h3>
+        <h3 class="float-md-start mb-0"><a href="index.html" class="text-white">Bacca's</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link" href="finanças.html">Finanças</a>
             <a class="nav-link active" aria-current="page" href="compras.html">Compras</a>
             <a class="nav-link" href="vendas.html">Vendas</a>
          </nav>
        </div>
-      </header>
+      </header>      
       <main class>
-        <form class= formulario action="compras.php" method="post">
+
+        <!--formulario e todas as oções-->
+ <form class= formulario action="vendas.php" method="post">
           <div class = "central">
             <div class="dropdown float-left">
-                <button class="dropbtn">Selecione o Produto</button>
+                <button id="Produto" class="dropbtn" type="button">Selecione o Produto</button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                      <button class="btnop" type="button" id="1" onclick="buton(id)">Produto 1</a>
+                      <button class="btnop" type="button" id="2" onclick="buton(id)">Produto 2</a>
+                      <button class="btnop" type="button" id="3" onclick="buton(id)">Produto 3</a>
+                      <button class="btnop" type="button" id="4" onclick="buton(id)">Produto 4</a>
+                      <button class="btnop" type="button" id="5" onclick="buton(id)">Produto 5</a>
                     </div>
             </div>
             <div class="dropdown2">
-                <button class="dropbtn2">Selecione o Fornecedor</button>
+                <button id='Fornecedor' class="dropbtn2">Selecione o Fornecedor</button>
                     <div class="dropdown-content2">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <button class="btnop" type="button" id="11" onclick="buton(id)">Fornecedor 1</a>
+                        <button class="btnop" type="button" id="12" onclick="buton(id)">Fornecedor 2</a>
+                        <button class="btnop" type="button" id="13" onclick="buton(id)">Fornecedor 3</a>
+                        <button class="btnop" type="button" id="14" onclick="buton(id)">Fornecedor 4</a>
+                        <button class="btnop" type="button" id="15" onclick="buton(id)">Fornecedor 5</a>
                     </div>
+                    <script>
+                      function buton(id){
+                        if (id == "1"){
+                          document.getElementById("Produto").innerHTML = "Produto 1";
+                        }else if(id == "2"){
+                          document.getElementById("Produto").innerHTML = "Produto 2";
+                        }else if(id == "3"){
+                          document.getElementById("Produto").innerHTML = "Produto 3";
+                        }else if(id == "4"){
+                          document.getElementById("Produto").innerHTML = "Produto 4";
+                        }else if(id == "5"){
+                          document.getElementById("Produto").innerHTML = "Produto 5";
+                        }else if (id == "11"){
+                          document.getElementById("Fornecedor").innerHTML = "Fornecedor 1";
+                        }else if(id == "12"){
+                          document.getElementById("Fornecedor").innerHTML = "Fornecedor 2";
+                        }else if(id == "13"){
+                          document.getElementById("Fornecedor").innerHTML = "Fornecedor 3";
+                        }else if(id == "14"){
+                          document.getElementById("Fornecedor").innerHTML = "Fornecedor 4";
+                        }else if(id == "15"){
+                          document.getElementById("Fornecedor").innerHTML = "Fornecedor 5";
+                        }
+                      }
+                    </script>
             </div>
             <div class="input-group">
                     <div class="input-group flex-nowrap">
@@ -65,9 +96,9 @@
                     </div>
             </div>
           </div>
-          <div class="finalizar">
-            <button type="submit" class="btn">Finalizar</button>
-          </div>
+            <div class="finalizar">
+              <button type="submit" class="btn">Finalizar</button>
+            </div>
         </form>
       </main>
      <footer class="mt-auto text-white-50">
