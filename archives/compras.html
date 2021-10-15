@@ -66,25 +66,44 @@
                       function buton(id){
                         if (id == "1"){
                           document.getElementById("Produto").innerHTML = "Produto 1";
-                          document.getElementById("Fornecedor").nodeValue = "Cliente1"
+                          var variavel = "Produto1";
+                          document.getElementById("client").value = variavel;
                         }else if(id == "2"){
                           document.getElementById("Produto").innerHTML = "Produto 2";
+                          var variavel = "Produto2";
+                          document.getElementById("client").value = variavel;
                         }else if(id == "3"){
                           document.getElementById("Produto").innerHTML = "Produto 3";
+                          var variavel = "Produto3";
+                          document.getElementById("client").value = variavel;
                         }else if(id == "4"){
                           document.getElementById("Produto").innerHTML = "Produto 4";
+                          var variavel = "Produto4";
+                          document.getElementById("client").value = variavel;
                         }else if(id == "5"){
                           document.getElementById("Produto").innerHTML = "Produto 5";
+                          var variavel = "Produto5";
+                          document.getElementById("client").value = variavel;
                         }else if (id == "11"){
                           document.getElementById("Fornecedor").innerHTML = "Fornecedor 1";
+                          var variavel = "Fornecedor1";
+                          document.getElementById("fornecedor").value = variavel;
                         }else if(id == "12"){
                           document.getElementById("Fornecedor").innerHTML = "Fornecedor 2";
+                          var variavel = "Fornecedor2";
+                          document.getElementById("fornecedor").value = variavel;
                         }else if(id == "13"){
                           document.getElementById("Fornecedor").innerHTML = "Fornecedor 3";
+                          var variavel = "Fornecedor3";
+                          document.getElementById("fornecedor").value = variavel;
                         }else if(id == "14"){
                           document.getElementById("Fornecedor").innerHTML = "Fornecedor 4";
+                          var variavel = "Fornecedor4";
+                          document.getElementById("fornecedor").value = variavel;
                         }else if(id == "15"){
                           document.getElementById("Fornecedor").innerHTML = "Fornecedor 5";
+                          var variavel = "Fornecedor5";
+                          document.getElementById("fornecedor").value = variavel;
                         }
                       }
                     </script>
@@ -92,17 +111,23 @@
             <div class="input-group">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Quantidade:</span>
-                        <input type="number" class="form-control" name = "quantidade" placeholder=" " aria-label="value" aria-describedby="addon-wrapping" required min = "1">
+                        <input id="quanent" type="number" class="form-control" name = "quantidade" placeholder=" " aria-label="value" aria-describedby="addon-wrapping" required min = "1">
                     </div>
             </div>
           </div>
+          <script>
+            function escrita(){
+              var variavel = document.getElementById("quanent").value;
+              document.getElementById("quantidade").value = variavel;
+            }
+          </script>
 
-        <form class= formulario action="vendas.php" method="post">
+        <form class= formulario action="compras.php" method="post">
           <div class="finalizar">
-            <input type="hidden" name="quantidade">
-            <input type="hidden" name="client">
-            <input type="hidden" name="fornecedor">
-            <button type="submit" class="btn">Finalizar</button>
+            <input id = "quantidade" type="hidden" name="quantidade" value = 5>
+            <input id = "client" type="hidden" name="produto" value = "charles">
+            <input id = "fornecedor" type="hidden" name="fornecedor" value = "henrique">
+            <button type="submit" onclick = "escrita()" class="btn">Finalizar</button>
           </div>
         </form>
       </main>

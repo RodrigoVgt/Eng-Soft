@@ -8,6 +8,7 @@
 
      <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -26,58 +27,112 @@
     </style>
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
+  <body class="d-flex h-100 text-center text-white bg-dark"> 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
        <div>
         <h3 class="float-md-start mb-0"><a href="index.html" class="text-white">Bacca's</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link" href="finanças.html">Finanças</a>
-            <a class="nav-link" href="compras.html">Compras</a>
-            <a class="nav-link active" aria-current="page" href="vendas.html">Vendas</a>
+            <a class="nav-link active" aria-current="page" href="compras.html">Compras</a>
+            <a class="nav-link" href="vendas.html">Vendas</a>
          </nav>
        </div>
-      </header>
+      </header>      
       <main class>
-        <form class= formulario action="vendas.php" method="post">
+
+        <!--formulario e todas as oções-->
           <div class = "central">
             <div class="dropdown float-left">
-                <button class="dropbtn">Selecione o Produto</button>
+                <button id="Produto" class="dropbtn" name = "produto" type="button">Selecione o Produto</button>
                     <div class="dropdown-content">
-                        <a href="#">Produto 1</a>
-                        <a href="#">Produto 2</a>
-                        <a href="#">Produto 3</a>
-                        <a href="#">Produto 4</a>
-                        <a href="#">Produto 5</a>
-                        <input type="text" id="fCliente" name="fProduto" placeholder="Ou digite aqui"><br>
+                      <button class="btnop" type="button" id="1" onclick="buton(id)">Produto 1</a>
+                      <button class="btnop" type="button" id="2" onclick="buton(id)">Produto 2</a>
+                      <button class="btnop" type="button" id="3" onclick="buton(id)">Produto 3</a>
+                      <button class="btnop" type="button" id="4" onclick="buton(id)">Produto 4</a>
+                      <button class="btnop" type="button" id="5" onclick="buton(id)">Produto 5</a>
                     </div>
             </div>
             <div class="dropdown2">
-                <button class="dropbtn2">Selecione o Cliente</button>
+                <button id='Cliente' class="dropbtn2" name = "cliente">Selecione o Cliente</button>
                     <div class="dropdown-content2">
-                        <a href="#">Cliente 1</a>
-                        <a href="#">Cliente 2</a>
-                        <a href="#">Cliente 3</a>
-                        <a href="#">Cliente 4</a>
-                        <a href="#">Cliente 5</a>
-                        <input type="text" id="fCliente" name="fCliente" placeholder="Ou digite aqui"><br>
+                        <button class="btnop" type="button" id="11" onclick="buton(id)">Cliente 1</a>
+                        <button class="btnop" type="button" id="12" onclick="buton(id)">Cliente 2</a>
+                        <button class="btnop" type="button" id="13" onclick="buton(id)">Cliente 3</a>
+                        <button class="btnop" type="button" id="14" onclick="buton(id)">Cliente 4</a>
+                        <button class="btnop" type="button" id="15" onclick="buton(id)">Cliente 5</a>
                     </div>
+                    <script>
+                      function buton(id){
+                        if (id == "1"){
+                          document.getElementById("Produto").innerHTML = "Produto 1";
+                          var variavel = "Produto1";
+                          document.getElementById("product").value = variavel;
+                        }else if(id == "2"){
+                          document.getElementById("Produto").innerHTML = "Produto 2";
+                          var variavel = "Produto2";
+                          document.getElementById("product").value = variavel;
+                        }else if(id == "3"){
+                          document.getElementById("Produto").innerHTML = "Produto 3";
+                          var variavel = "Produto3";
+                          document.getElementById("product").value = variavel;
+                        }else if(id == "4"){
+                          document.getElementById("Produto").innerHTML = "Produto 4";
+                          var variavel = "Produto4";
+                          document.getElementById("product").value = variavel;
+                        }else if(id == "5"){
+                          document.getElementById("Produto").innerHTML = "Produto 5";
+                          var variavel = "Produto5";
+                          document.getElementById("product").value = variavel;
+                        }else if (id == "11"){
+                          document.getElementById("Cliente").innerHTML = "Cliente 1";
+                          var variavel = "Cliente1";
+                          document.getElementById("cliente").value = variavel;
+                        }else if(id == "12"){
+                          document.getElementById("Cliente").innerHTML = "Cliente 2";
+                          var variavel = "Cliente2";
+                          document.getElementById("cliente").value = variavel;
+                        }else if(id == "13"){
+                          document.getElementById("Cliente").innerHTML = "Cliente 3";
+                          var variavel = "Cliente3";
+                          document.getElementById("cliente").value = variavel;
+                        }else if(id == "14"){
+                          document.getElementById("Cliente").innerHTML = "Cliente 4";
+                          var variavel = "Cliente4";
+                          document.getElementById("cliente").value = variavel;
+                        }else if(id == "15"){
+                          document.getElementById("Cliente").innerHTML = "Cliente 5";
+                          var variavel = "Cliente5";
+                          document.getElementById("cliente").value = variavel;
+                        }
+                      }
+                    </script>
             </div>
             <div class="input-group">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Quantidade:</span>
-                        <input type="number" class="form-control" id = "quantidade" placeholder=" " aria-label="value" aria-describedby="addon-wrapping" required min = "1">
+                        <input id="quanent" type="number" class="form-control" name = "quantidade" placeholder=" " aria-label="value" aria-describedby="addon-wrapping" required min = "1">
                     </div>
             </div>
           </div>
-            <div class="finalizar">
-              <button type="submit" class="btn">Finalizar</button>
-            </div>
+          <script>
+            function escrita(){
+              var variavel = document.getElementById("quanent").value;
+              document.getElementById("quantidade").value = variavel;
+            }
+          </script>
+
+        <form class= formulario action="vendas.php" method="post">
+          <div class="finalizar">
+            <input id = "quantidade" type="hidden" name="quantidade" value = 5>
+            <input id = "product" type="hidden" name="produto" value = "charles">
+            <input id = "cliente" type="hidden" name="cliente" value = "henrique">
+            <button type="submit" onclick = "escrita()" class="btn">Finalizar</button>
+          </div>
         </form>
       </main>
      <footer class="mt-auto text-white-50">
-        <p>Trabalho para a disciplina de Engenharia de Software, pela Universidade Federal da Fronteira Sul</p>
+        <p>Trabalho para a disciplina de Engenharia de Software, pela Universidade Federal da Fronteira Sul</a></p>
      </footer>
     </div>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
