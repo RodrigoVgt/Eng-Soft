@@ -124,9 +124,9 @@
 
         <form class= formulario action="compras.php" method="post">
           <div class="finalizar">
-            <input id = "quantidade" type="hidden" name="quantidade" value = 5>
-            <input id = "client" type="hidden" name="produto" value = "charles">
-            <input id = "fornecedor" type="hidden" name="fornecedor" value = "henrique">
+            <input id = "quantidade" type="hidden" name="quantidade" required min = "1">
+            <input id = "client" type="hidden" name="produto" value = " " required>
+            <input id = "fornecedor" type="hidden" name="fornecedor" value = " " required>
             <button type="submit" onclick = "escrita()" class="btn">Finalizar</button>
           </div>
         </form>
